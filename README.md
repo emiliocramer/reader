@@ -1,40 +1,60 @@
 # reader
 
-Safari Web Extension that automatically applies bionic-style leading-letter bolding on every supported page load.
+`reader` is a Safari Web Extension that automatically turns readable text into bionic-style text: the leading characters of each word are emphasized while the rest of the word stays visually normal.
 
-## What Is Included
+It runs automatically on page load, follows dynamic page updates, and also rewrites embedded PDF text streams in memory so direct PDFs render with bionic word starts inside Safari.
 
-- Default enabled global content script.
-- `<all_urls>` host permission.
-- `document_start` injection.
-- `all_frames` injection for frames the browser allows extensions to access.
-- Mutation observers for dynamic page updates.
-- Open shadow-root traversal and observation.
-- SVG text labels through SVG `<tspan>` wrappers.
-- Config popup with enable toggle, fixation width, min/max bold letters, font weight, code-text handling, and PDF handling.
-- In-place PDF handling: direct PDF URLs keep their original address while `reader` mounts PDF handling over the browser PDF surface.
-- Native PDF rewrite path: `reader` rewrites PDF text-show operators so the resulting PDF itself paints word starts in synthetic bold, then Safari renders that PDF.
-- Text fallback: damaged PDFs or PDFs that cannot be safely rewritten fall back to embedded text extraction with vendored pdf.js.
+## What It Does
 
-## Hard Browser Limits
+- Runs on all allowed URLs as soon as Safari permits the content script.
+- Bolds configurable leading characters for every readable word.
+- Watches dynamic DOM changes and open shadow roots.
+- Handles normal page text, SVG text, iframes Safari exposes, and direct PDF URLs.
+- Rewrites PDF text drawing operations in memory, then lets Safari render the resulting PDF.
+- Leaves metadata alone, including document titles, head tags, links, and meta tags.
+- Provides a small popup for configuration and the global enable toggle.
 
-The extension cannot mutate browser-owned/internal pages, closed shadow roots, canvas-rendered text, images, or password/input values because those are not exposed as normal page text. For PDFs, the extension keeps the original PDF URL, rewrites embedded PDF text streams in memory, and displays the rewritten PDF in the page. Scanned/image-only PDFs need OCR and will show no embedded text.
+## Limits
 
-## Develop
+Some surfaces are browser-owned or not real selectable text. `reader` cannot safely rewrite those.
+
+- Safari internal pages are off limits.
+- Closed shadow roots are off limits.
+- Canvas text and image-only text are off limits.
+- Scanned PDFs need OCR and do not contain text streams to rewrite.
+- Password fields, inputs, textareas, and editable regions are intentionally skipped.
+
+## Install For Development
 
 ```sh
 npm install
 npm run vendor:pdfjs
 npm run package:extension
-npm test
-npm run smoke:pdfs
 ```
 
-`npm test` covers DOM transformation, dynamic content, open shadow roots, SVG text, editable-region behavior, in-place PDF mounting, PDF URL/header detection, manifest resources, and embedded PDF text extraction.
+Then generate the Safari wrapper:
 
-`npm run smoke:pdfs` performs live network checks against the Palantir PDF, an arXiv PDF URL without a `.pdf` suffix, IRS PDFs including a CID/form-heavy publication, and W3C-generated PDFs.
+```sh
+xcrun safari-web-extension-converter dist/extension \
+  --project-location SafariProject \
+  --app-name "reader" \
+  --bundle-identifier dev.emiliocramer.reader \
+  --macos-only \
+  --copy-resources \
+  --no-open \
+  --no-prompt \
+  --force
+```
 
-## Build Safari Wrapper
+Open `SafariProject/reader/reader.xcodeproj` in Xcode, run the `reader` app, then enable the extension in Safari:
+
+```text
+Safari Settings -> Extensions -> reader
+```
+
+Grant website access for the sites you want transformed.
+
+## Rebuild After Changes
 
 ```sh
 npm run package:extension
@@ -50,12 +70,35 @@ xcrun safari-web-extension-converter dist/extension \
   --force
 ```
 
-Open `SafariProject/reader/reader.xcodeproj`, run the containing app, then enable the extension in Safari Settings.
+For the cleanest reload during testing, quit Safari fully, relaunch the `reader` app from Xcode or the built app, then reopen Safari.
 
-## Manual Checks
+## Test
 
-- Open `fixtures/smoke.html` after granting file-page access.
-- Open an ordinary article page.
-- Open a page with dynamic content.
-- Open a direct `.pdf` URL and confirm the address bar remains on the PDF URL while the bionic PDF reader appears in the page.
-# reader
+```sh
+npm test
+npm run smoke:pdfs
+```
+
+`npm test` covers the DOM engine, config handling, manifest resources, PDF routing, in-place PDF mounting, and PDF byte rewriting.
+
+`npm run smoke:pdfs` runs live PDF checks against several public PDFs, including direct `.pdf` URLs, URLs without a `.pdf` suffix, CID-heavy PDFs, and form-heavy PDFs.
+
+## Project Layout
+
+```text
+background/   Extension background worker.
+content/      Page content script and page CSS.
+icons/        Extension icons.
+pdf/          Packaged PDF viewer fallback.
+popup/        Configuration popup.
+scripts/      Vendoring, packaging, and smoke-test scripts.
+shared/       Shared browser, config, DOM, PDF, and routing logic.
+test/         Node test suite.
+vendor/       Vendored pdf.js and pdf-lib browser assets.
+```
+
+Generated output lives in `dist/` and `SafariProject/`.
+
+## Environment
+
+No environment variables are required. Keep local-only values in `.env` if you ever add them; `.env` files are ignored by git.
