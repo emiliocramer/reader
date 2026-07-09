@@ -7,44 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADC61772300000F300FF1B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC61771300000F300FF1B3C /* AppDelegate.swift */; };
-		ADC61776300000F300FF1B3C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = ADC61774300000F300FF1B3C /* Main.html */; };
-		ADC61778300000F300FF1B3C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC61777300000F300FF1B3C /* Icon.png */; };
-		ADC6177A300000F300FF1B3C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = ADC61779300000F300FF1B3C /* Style.css */; };
-		ADC6177C300000F300FF1B3C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = ADC6177B300000F300FF1B3C /* Script.js */; };
-		ADC6177E300000F300FF1B3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6177D300000F300FF1B3C /* ViewController.swift */; };
-		ADC61781300000F300FF1B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC6177F300000F300FF1B3C /* Main.storyboard */; };
-		ADC61783300000F400FF1B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC61782300000F400FF1B3C /* Assets.xcassets */; };
-		ADC6178A300000F400FF1B3C /* reader Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ADC61789300000F400FF1B3C /* reader Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ADC6178F300000F400FF1B3C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6178E300000F400FF1B3C /* SafariWebExtensionHandler.swift */; };
-		ADC617A3300000F500FF1B3C /* background in Resources */ = {isa = PBXBuildFile; fileRef = ADC6179B300000F500FF1B3C /* background */; };
-		ADC617A4300000F500FF1B3C /* popup in Resources */ = {isa = PBXBuildFile; fileRef = ADC6179C300000F500FF1B3C /* popup */; };
-		ADC617A5300000F500FF1B3C /* pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADC6179D300000F500FF1B3C /* pdf */; };
-		ADC617A6300000F500FF1B3C /* content in Resources */ = {isa = PBXBuildFile; fileRef = ADC6179E300000F500FF1B3C /* content */; };
-		ADC617A7300000F500FF1B3C /* shared in Resources */ = {isa = PBXBuildFile; fileRef = ADC6179F300000F500FF1B3C /* shared */; };
-		ADC617A8300000F500FF1B3C /* icons in Resources */ = {isa = PBXBuildFile; fileRef = ADC617A0300000F500FF1B3C /* icons */; };
-		ADC617A9300000F500FF1B3C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = ADC617A1300000F500FF1B3C /* manifest.json */; };
-		ADC617AA300000F500FF1B3C /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = ADC617A2300000F500FF1B3C /* vendor */; };
+		AD99E5BB3000049600BD7F9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99E5BA3000049600BD7F9D /* AppDelegate.swift */; };
+		AD99E5BF3000049600BD7F9D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5BD3000049600BD7F9D /* Main.html */; };
+		AD99E5C13000049600BD7F9D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5C03000049600BD7F9D /* Icon.png */; };
+		AD99E5C33000049600BD7F9D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5C23000049600BD7F9D /* Style.css */; };
+		AD99E5C53000049600BD7F9D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5C43000049600BD7F9D /* Script.js */; };
+		AD99E5C73000049600BD7F9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99E5C63000049600BD7F9D /* ViewController.swift */; };
+		AD99E5CA3000049600BD7F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5C83000049600BD7F9D /* Main.storyboard */; };
+		AD99E5CC3000049700BD7F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5CB3000049700BD7F9D /* Assets.xcassets */; };
+		AD99E5D33000049700BD7F9D /* reader Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AD99E5D23000049700BD7F9D /* reader Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD99E5D83000049700BD7F9D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99E5D73000049700BD7F9D /* SafariWebExtensionHandler.swift */; };
+		AD99E5EC3000049800BD7F9D /* background in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5E43000049800BD7F9D /* background */; };
+		AD99E5ED3000049800BD7F9D /* popup in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5E53000049800BD7F9D /* popup */; };
+		AD99E5EE3000049800BD7F9D /* pdf in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5E63000049800BD7F9D /* pdf */; };
+		AD99E5EF3000049800BD7F9D /* content in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5E73000049800BD7F9D /* content */; };
+		AD99E5F03000049800BD7F9D /* shared in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5E83000049800BD7F9D /* shared */; };
+		AD99E5F13000049800BD7F9D /* icons in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5E93000049800BD7F9D /* icons */; };
+		AD99E5F23000049800BD7F9D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5EA3000049800BD7F9D /* manifest.json */; };
+		AD99E5F33000049800BD7F9D /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = AD99E5EB3000049800BD7F9D /* vendor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ADC6178B300000F400FF1B3C /* PBXContainerItemProxy */ = {
+		AD99E5D43000049700BD7F9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ADC61766300000F300FF1B3C /* Project object */;
+			containerPortal = AD99E5AF3000049600BD7F9D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ADC61788300000F400FF1B3C;
+			remoteGlobalIDString = AD99E5D13000049700BD7F9D;
 			remoteInfo = "reader Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ADC61796300000F400FF1B3C /* Embed Foundation Extensions */ = {
+		AD99E5DF3000049700BD7F9D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				ADC6178A300000F400FF1B3C /* reader Extension.appex in Embed Foundation Extensions */,
+				AD99E5D33000049700BD7F9D /* reader Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,38 +52,38 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		ADC6176E300000F300FF1B3C /* reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC61771300000F300FF1B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADC61775300000F300FF1B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
-		ADC61777300000F300FF1B3C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		ADC61779300000F300FF1B3C /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		ADC6177B300000F300FF1B3C /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		ADC6177D300000F300FF1B3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADC61780300000F300FF1B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ADC61782300000F400FF1B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ADC61784300000F400FF1B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADC61789300000F400FF1B3C /* reader Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "reader Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC6178E300000F400FF1B3C /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		ADC61790300000F400FF1B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADC6179B300000F500FF1B3C /* background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background; path = Resources/background; sourceTree = "<group>"; };
-		ADC6179C300000F500FF1B3C /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = Resources/popup; sourceTree = "<group>"; };
-		ADC6179D300000F500FF1B3C /* pdf */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pdf; path = Resources/pdf; sourceTree = "<group>"; };
-		ADC6179E300000F500FF1B3C /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = Resources/content; sourceTree = "<group>"; };
-		ADC6179F300000F500FF1B3C /* shared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shared; path = Resources/shared; sourceTree = "<group>"; };
-		ADC617A0300000F500FF1B3C /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
-		ADC617A1300000F500FF1B3C /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
-		ADC617A2300000F500FF1B3C /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = Resources/vendor; sourceTree = "<group>"; };
+		AD99E5B73000049600BD7F9D /* reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD99E5BA3000049600BD7F9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD99E5BE3000049600BD7F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		AD99E5C03000049600BD7F9D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AD99E5C23000049600BD7F9D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		AD99E5C43000049600BD7F9D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		AD99E5C63000049600BD7F9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD99E5C93000049600BD7F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD99E5CB3000049700BD7F9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD99E5CD3000049700BD7F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD99E5D23000049700BD7F9D /* reader Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "reader Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD99E5D73000049700BD7F9D /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		AD99E5D93000049700BD7F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD99E5E43000049800BD7F9D /* background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background; path = Resources/background; sourceTree = "<group>"; };
+		AD99E5E53000049800BD7F9D /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = Resources/popup; sourceTree = "<group>"; };
+		AD99E5E63000049800BD7F9D /* pdf */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pdf; path = Resources/pdf; sourceTree = "<group>"; };
+		AD99E5E73000049800BD7F9D /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = Resources/content; sourceTree = "<group>"; };
+		AD99E5E83000049800BD7F9D /* shared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shared; path = Resources/shared; sourceTree = "<group>"; };
+		AD99E5E93000049800BD7F9D /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		AD99E5EA3000049800BD7F9D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		AD99E5EB3000049800BD7F9D /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = Resources/vendor; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ADC6176B300000F300FF1B3C /* Frameworks */ = {
+		AD99E5B43000049600BD7F9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADC61786300000F400FF1B3C /* Frameworks */ = {
+		AD99E5CF3000049700BD7F9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,69 +93,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ADC61765300000F300FF1B3C = {
+		AD99E5AE3000049600BD7F9D = {
 			isa = PBXGroup;
 			children = (
-				ADC61770300000F300FF1B3C /* reader */,
-				ADC6178D300000F400FF1B3C /* reader Extension */,
-				ADC6176F300000F300FF1B3C /* Products */,
+				AD99E5B93000049600BD7F9D /* reader */,
+				AD99E5D63000049700BD7F9D /* reader Extension */,
+				AD99E5B83000049600BD7F9D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ADC6176F300000F300FF1B3C /* Products */ = {
+		AD99E5B83000049600BD7F9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADC6176E300000F300FF1B3C /* reader.app */,
-				ADC61789300000F400FF1B3C /* reader Extension.appex */,
+				AD99E5B73000049600BD7F9D /* reader.app */,
+				AD99E5D23000049700BD7F9D /* reader Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADC61770300000F300FF1B3C /* reader */ = {
+		AD99E5B93000049600BD7F9D /* reader */ = {
 			isa = PBXGroup;
 			children = (
-				ADC61771300000F300FF1B3C /* AppDelegate.swift */,
-				ADC6177D300000F300FF1B3C /* ViewController.swift */,
-				ADC6177F300000F300FF1B3C /* Main.storyboard */,
-				ADC61782300000F400FF1B3C /* Assets.xcassets */,
-				ADC61784300000F400FF1B3C /* Info.plist */,
-				ADC61773300000F300FF1B3C /* Resources */,
+				AD99E5BA3000049600BD7F9D /* AppDelegate.swift */,
+				AD99E5C63000049600BD7F9D /* ViewController.swift */,
+				AD99E5C83000049600BD7F9D /* Main.storyboard */,
+				AD99E5CB3000049700BD7F9D /* Assets.xcassets */,
+				AD99E5CD3000049700BD7F9D /* Info.plist */,
+				AD99E5BC3000049600BD7F9D /* Resources */,
 			);
 			path = reader;
 			sourceTree = "<group>";
 		};
-		ADC61773300000F300FF1B3C /* Resources */ = {
+		AD99E5BC3000049600BD7F9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ADC61774300000F300FF1B3C /* Main.html */,
-				ADC61777300000F300FF1B3C /* Icon.png */,
-				ADC61779300000F300FF1B3C /* Style.css */,
-				ADC6177B300000F300FF1B3C /* Script.js */,
+				AD99E5BD3000049600BD7F9D /* Main.html */,
+				AD99E5C03000049600BD7F9D /* Icon.png */,
+				AD99E5C23000049600BD7F9D /* Style.css */,
+				AD99E5C43000049600BD7F9D /* Script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		ADC6178D300000F400FF1B3C /* reader Extension */ = {
+		AD99E5D63000049700BD7F9D /* reader Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ADC6179A300000F500FF1B3C /* Resources */,
-				ADC6178E300000F400FF1B3C /* SafariWebExtensionHandler.swift */,
-				ADC61790300000F400FF1B3C /* Info.plist */,
+				AD99E5E33000049800BD7F9D /* Resources */,
+				AD99E5D73000049700BD7F9D /* SafariWebExtensionHandler.swift */,
+				AD99E5D93000049700BD7F9D /* Info.plist */,
 			);
 			path = "reader Extension";
 			sourceTree = "<group>";
 		};
-		ADC6179A300000F500FF1B3C /* Resources */ = {
+		AD99E5E33000049800BD7F9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ADC6179B300000F500FF1B3C /* background */,
-				ADC6179C300000F500FF1B3C /* popup */,
-				ADC6179D300000F500FF1B3C /* pdf */,
-				ADC6179E300000F500FF1B3C /* content */,
-				ADC6179F300000F500FF1B3C /* shared */,
-				ADC617A0300000F500FF1B3C /* icons */,
-				ADC617A1300000F500FF1B3C /* manifest.json */,
-				ADC617A2300000F500FF1B3C /* vendor */,
+				AD99E5E43000049800BD7F9D /* background */,
+				AD99E5E53000049800BD7F9D /* popup */,
+				AD99E5E63000049800BD7F9D /* pdf */,
+				AD99E5E73000049800BD7F9D /* content */,
+				AD99E5E83000049800BD7F9D /* shared */,
+				AD99E5E93000049800BD7F9D /* icons */,
+				AD99E5EA3000049800BD7F9D /* manifest.json */,
+				AD99E5EB3000049800BD7F9D /* vendor */,
 			);
 			name = Resources;
 			path = "reader Extension";
@@ -164,34 +164,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADC6176D300000F300FF1B3C /* reader */ = {
+		AD99E5B63000049600BD7F9D /* reader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADC61797300000F400FF1B3C /* Build configuration list for PBXNativeTarget "reader" */;
+			buildConfigurationList = AD99E5E03000049700BD7F9D /* Build configuration list for PBXNativeTarget "reader" */;
 			buildPhases = (
-				ADC6176A300000F300FF1B3C /* Sources */,
-				ADC6176B300000F300FF1B3C /* Frameworks */,
-				ADC6176C300000F300FF1B3C /* Resources */,
-				ADC61796300000F400FF1B3C /* Embed Foundation Extensions */,
+				AD99E5B33000049600BD7F9D /* Sources */,
+				AD99E5B43000049600BD7F9D /* Frameworks */,
+				AD99E5B53000049600BD7F9D /* Resources */,
+				AD99E5DF3000049700BD7F9D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ADC6178C300000F400FF1B3C /* PBXTargetDependency */,
+				AD99E5D53000049700BD7F9D /* PBXTargetDependency */,
 			);
 			name = reader;
 			packageProductDependencies = (
 			);
 			productName = reader;
-			productReference = ADC6176E300000F300FF1B3C /* reader.app */;
+			productReference = AD99E5B73000049600BD7F9D /* reader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ADC61788300000F400FF1B3C /* reader Extension */ = {
+		AD99E5D13000049700BD7F9D /* reader Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADC61793300000F400FF1B3C /* Build configuration list for PBXNativeTarget "reader Extension" */;
+			buildConfigurationList = AD99E5DC3000049700BD7F9D /* Build configuration list for PBXNativeTarget "reader Extension" */;
 			buildPhases = (
-				ADC61785300000F400FF1B3C /* Sources */,
-				ADC61786300000F400FF1B3C /* Frameworks */,
-				ADC61787300000F400FF1B3C /* Resources */,
+				AD99E5CE3000049700BD7F9D /* Sources */,
+				AD99E5CF3000049700BD7F9D /* Frameworks */,
+				AD99E5D03000049700BD7F9D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -201,119 +201,119 @@
 			packageProductDependencies = (
 			);
 			productName = "reader Extension";
-			productReference = ADC61789300000F400FF1B3C /* reader Extension.appex */;
+			productReference = AD99E5D23000049700BD7F9D /* reader Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ADC61766300000F300FF1B3C /* Project object */ = {
+		AD99E5AF3000049600BD7F9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
-					ADC6176D300000F300FF1B3C = {
+					AD99E5B63000049600BD7F9D = {
 						CreatedOnToolsVersion = 26.6;
 					};
-					ADC61788300000F400FF1B3C = {
+					AD99E5D13000049700BD7F9D = {
 						CreatedOnToolsVersion = 26.6;
 					};
 				};
 			};
-			buildConfigurationList = ADC61769300000F300FF1B3C /* Build configuration list for PBXProject "reader" */;
+			buildConfigurationList = AD99E5B23000049600BD7F9D /* Build configuration list for PBXProject "reader" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = ADC61765300000F300FF1B3C;
+			mainGroup = AD99E5AE3000049600BD7F9D;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = ADC6176F300000F300FF1B3C /* Products */;
+			productRefGroup = AD99E5B83000049600BD7F9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADC6176D300000F300FF1B3C /* reader */,
-				ADC61788300000F400FF1B3C /* reader Extension */,
+				AD99E5B63000049600BD7F9D /* reader */,
+				AD99E5D13000049700BD7F9D /* reader Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ADC6176C300000F300FF1B3C /* Resources */ = {
+		AD99E5B53000049600BD7F9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC61778300000F300FF1B3C /* Icon.png in Resources */,
-				ADC61781300000F300FF1B3C /* Main.storyboard in Resources */,
-				ADC6177C300000F300FF1B3C /* Script.js in Resources */,
-				ADC61776300000F300FF1B3C /* Main.html in Resources */,
-				ADC61783300000F400FF1B3C /* Assets.xcassets in Resources */,
-				ADC6177A300000F300FF1B3C /* Style.css in Resources */,
+				AD99E5C13000049600BD7F9D /* Icon.png in Resources */,
+				AD99E5CA3000049600BD7F9D /* Main.storyboard in Resources */,
+				AD99E5C53000049600BD7F9D /* Script.js in Resources */,
+				AD99E5BF3000049600BD7F9D /* Main.html in Resources */,
+				AD99E5CC3000049700BD7F9D /* Assets.xcassets in Resources */,
+				AD99E5C33000049600BD7F9D /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADC61787300000F400FF1B3C /* Resources */ = {
+		AD99E5D03000049700BD7F9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC617A7300000F500FF1B3C /* shared in Resources */,
-				ADC617A9300000F500FF1B3C /* manifest.json in Resources */,
-				ADC617A5300000F500FF1B3C /* pdf in Resources */,
-				ADC617A3300000F500FF1B3C /* background in Resources */,
-				ADC617AA300000F500FF1B3C /* vendor in Resources */,
-				ADC617A8300000F500FF1B3C /* icons in Resources */,
-				ADC617A6300000F500FF1B3C /* content in Resources */,
-				ADC617A4300000F500FF1B3C /* popup in Resources */,
+				AD99E5F03000049800BD7F9D /* shared in Resources */,
+				AD99E5F23000049800BD7F9D /* manifest.json in Resources */,
+				AD99E5EE3000049800BD7F9D /* pdf in Resources */,
+				AD99E5EC3000049800BD7F9D /* background in Resources */,
+				AD99E5F33000049800BD7F9D /* vendor in Resources */,
+				AD99E5F13000049800BD7F9D /* icons in Resources */,
+				AD99E5EF3000049800BD7F9D /* content in Resources */,
+				AD99E5ED3000049800BD7F9D /* popup in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ADC6176A300000F300FF1B3C /* Sources */ = {
+		AD99E5B33000049600BD7F9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC6177E300000F300FF1B3C /* ViewController.swift in Sources */,
-				ADC61772300000F300FF1B3C /* AppDelegate.swift in Sources */,
+				AD99E5C73000049600BD7F9D /* ViewController.swift in Sources */,
+				AD99E5BB3000049600BD7F9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADC61785300000F400FF1B3C /* Sources */ = {
+		AD99E5CE3000049700BD7F9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC6178F300000F400FF1B3C /* SafariWebExtensionHandler.swift in Sources */,
+				AD99E5D83000049700BD7F9D /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ADC6178C300000F400FF1B3C /* PBXTargetDependency */ = {
+		AD99E5D53000049700BD7F9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADC61788300000F400FF1B3C /* reader Extension */;
-			targetProxy = ADC6178B300000F400FF1B3C /* PBXContainerItemProxy */;
+			target = AD99E5D13000049700BD7F9D /* reader Extension */;
+			targetProxy = AD99E5D43000049700BD7F9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ADC61774300000F300FF1B3C /* Main.html */ = {
+		AD99E5BD3000049600BD7F9D /* Main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ADC61775300000F300FF1B3C /* Base */,
+				AD99E5BE3000049600BD7F9D /* Base */,
 			);
 			name = Main.html;
 			sourceTree = "<group>";
 		};
-		ADC6177F300000F300FF1B3C /* Main.storyboard */ = {
+		AD99E5C83000049600BD7F9D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ADC61780300000F300FF1B3C /* Base */,
+				AD99E5C93000049600BD7F9D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ADC61791300000F400FF1B3C /* Debug */ = {
+		AD99E5DA3000049700BD7F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,7 +384,7 @@
 			};
 			name = Debug;
 		};
-		ADC61792300000F400FF1B3C /* Release */ = {
+		AD99E5DB3000049700BD7F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -439,7 +439,7 @@
 			};
 			name = Release;
 		};
-		ADC61794300000F400FF1B3C /* Debug */ = {
+		AD99E5DD3000049700BD7F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -473,7 +473,7 @@
 			};
 			name = Debug;
 		};
-		ADC61795300000F400FF1B3C /* Release */ = {
+		AD99E5DE3000049700BD7F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -507,7 +507,7 @@
 			};
 			name = Release;
 		};
-		ADC61798300000F400FF1B3C /* Debug */ = {
+		AD99E5E13000049700BD7F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -548,7 +548,7 @@
 			};
 			name = Debug;
 		};
-		ADC61799300000F400FF1B3C /* Release */ = {
+		AD99E5E23000049700BD7F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -592,34 +592,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADC61769300000F300FF1B3C /* Build configuration list for PBXProject "reader" */ = {
+		AD99E5B23000049600BD7F9D /* Build configuration list for PBXProject "reader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADC61791300000F400FF1B3C /* Debug */,
-				ADC61792300000F400FF1B3C /* Release */,
+				AD99E5DA3000049700BD7F9D /* Debug */,
+				AD99E5DB3000049700BD7F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC61793300000F400FF1B3C /* Build configuration list for PBXNativeTarget "reader Extension" */ = {
+		AD99E5DC3000049700BD7F9D /* Build configuration list for PBXNativeTarget "reader Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADC61794300000F400FF1B3C /* Debug */,
-				ADC61795300000F400FF1B3C /* Release */,
+				AD99E5DD3000049700BD7F9D /* Debug */,
+				AD99E5DE3000049700BD7F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC61797300000F400FF1B3C /* Build configuration list for PBXNativeTarget "reader" */ = {
+		AD99E5E03000049700BD7F9D /* Build configuration list for PBXNativeTarget "reader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADC61798300000F400FF1B3C /* Debug */,
-				ADC61799300000F400FF1B3C /* Release */,
+				AD99E5E13000049700BD7F9D /* Debug */,
+				AD99E5E23000049700BD7F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ADC61766300000F300FF1B3C /* Project object */;
+	rootObject = AD99E5AF3000049600BD7F9D /* Project object */;
 }

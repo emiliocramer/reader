@@ -20,6 +20,7 @@
     transformEditable: document.getElementById("transformEditable"),
     pdfRedirectEnabled: document.getElementById("pdfRedirectEnabled"),
     refreshPage: document.getElementById("refreshPage"),
+    disablePage: document.getElementById("disablePage"),
     status: document.getElementById("status")
   };
 
@@ -79,6 +80,28 @@
       .catch(() => {});
   }
 
+  function disableCurrentPageSession() {
+    controls.disablePage.disabled = true;
+    controls.status.textContent = "Disabled for this page";
+
+    API.tabsQuery({ active: true, currentWindow: true })
+      .then((tabs) => {
+        const tab = tabs && tabs[0];
+        if (!tab || typeof tab.id !== "number") {
+          throw new Error("No active tab.");
+        }
+        return API.runtimeSendMessage({
+          type: "boldlead-disable-page-session",
+          tabId: tab.id,
+          url: tab.url || ""
+        });
+      })
+      .catch(() => {
+        controls.disablePage.disabled = false;
+        controls.status.textContent = "Could not disable this page";
+      });
+  }
+
   const inputs = [
     controls.enabled,
     controls.fixationRatio,
@@ -96,6 +119,7 @@
   }
 
   controls.refreshPage.addEventListener("click", forceRefresh);
+  controls.disablePage.addEventListener("click", disableCurrentPageSession);
 
   API.storageGet(Config.DEFAULT_SETTINGS)
     .then((settings) => {

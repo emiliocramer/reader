@@ -13,6 +13,7 @@ It runs automatically on page load, follows dynamic page updates, and also rewri
 - Rewrites PDF text drawing operations in memory, then lets Safari render the resulting PDF.
 - Leaves metadata alone, including document titles, head tags, links, and meta tags.
 - Provides a small popup for configuration and the global enable toggle.
+- Includes a one-click page-session disable that reloads the current tab without attaching the reader until the next explicit reload.
 
 ## Limits
 

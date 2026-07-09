@@ -250,28 +250,44 @@
     global.setTimeout(() => mountPdfReader(settings), 1000);
   }
 
-  const reader = Engine.createReader({
-    document: global.document,
-    window: global,
-    settings: Config.DEFAULT_SETTINGS
-  });
+  function navigationType() {
+    try {
+      const entries = global.performance && global.performance.getEntriesByType
+        ? global.performance.getEntriesByType("navigation")
+        : [];
+      const entry = entries && entries[0];
+      return entry && entry.type ? String(entry.type) : "";
+    } catch (_error) {
+      return "";
+    }
+  }
 
-  reader.enable(Config.DEFAULT_SETTINGS);
-
-  API.storageGet(Config.DEFAULT_SETTINGS)
-    .then((storedSettings) => {
-      const normalized = Config.normalizeSettings(storedSettings);
-      reader.updateSettings(normalized);
-      schedulePdfMount(normalized);
+  function shouldDisableForPageSession() {
+    return API.runtimeSendMessage({
+      type: "boldlead-page-session-state",
+      topFrame: isTopFrame(),
+      url: global.location.href,
+      navigationType: navigationType()
     })
-    .catch(() => {
-      reader.updateSettings(Config.DEFAULT_SETTINGS);
-      schedulePdfMount(Config.DEFAULT_SETTINGS);
-    });
+      .then((response) => Boolean(response && response.disabled))
+      .catch(() => false);
+  }
 
-  if (API.raw && API.raw.storage && API.raw.storage.onChanged) {
+  function storedSettings() {
+    return API.storageGet(Config.DEFAULT_SETTINGS)
+      .then((settings) => Config.normalizeSettings(settings))
+      .catch(() => Config.normalizeSettings(Config.DEFAULT_SETTINGS));
+  }
+
+  let reader = null;
+
+  function installStorageListener() {
+    if (!API.raw || !API.raw.storage || !API.raw.storage.onChanged) {
+      return;
+    }
+
     API.raw.storage.onChanged.addListener((changes, areaName) => {
-      if (areaName && areaName !== "local") {
+      if (!reader || (areaName && areaName !== "local")) {
         return;
       }
 
@@ -290,20 +306,53 @@
     });
   }
 
-  if (API.raw && API.raw.runtime && API.raw.runtime.onMessage) {
+  function installMessageListener() {
+    if (!API.raw || !API.raw.runtime || !API.raw.runtime.onMessage) {
+      return;
+    }
+
     API.raw.runtime.onMessage.addListener((message, _sender, sendResponse) => {
       if (!message || message.type !== "boldlead-force-refresh") {
         return false;
       }
 
-      reader.refresh();
+      if (reader) {
+        reader.refresh();
+      }
       if (typeof sendResponse === "function") {
         sendResponse({
-          ok: true,
-          stats: reader.getStats()
+          ok: Boolean(reader),
+          stats: reader ? reader.getStats() : null
         });
       }
       return false;
     });
   }
+
+  function startReader(settings) {
+    reader = Engine.createReader({
+      document: global.document,
+      window: global,
+      settings
+    });
+    reader.updateSettings(settings);
+    schedulePdfMount(settings);
+    installStorageListener();
+    installMessageListener();
+  }
+
+  shouldDisableForPageSession()
+    .then((disabledForSession) => {
+      if (disabledForSession) {
+        global.__boldLeadReaderSessionDisabled = true;
+        return null;
+      }
+      return storedSettings().then((settings) => {
+        startReader(settings);
+        return null;
+      });
+    })
+    .catch(() => {
+      startReader(Config.normalizeSettings(Config.DEFAULT_SETTINGS));
+    });
 })(globalThis);
