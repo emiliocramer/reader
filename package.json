@@ -1,0 +1,19 @@
+{
+  "name": "reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor:pdfjs": "node scripts/vendor-pdfjs.mjs",
+    "package:extension": "node scripts/package-extension.mjs",
+    "smoke:pdfs": "node scripts/smoke-pdfs.mjs",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.1.200"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

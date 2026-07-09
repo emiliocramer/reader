@@ -1,0 +1,6 @@
+node_modules/
+dist/
+SafariProject/DerivedData/
+.DS_Store
+npm-debug.log*
+coverage/

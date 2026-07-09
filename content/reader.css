@@ -1,0 +1,24 @@
+:root {
+  --boldlead-reader-weight: 700;
+}
+
+[data-boldlead-word] {
+  display: inline !important;
+  font: inherit !important;
+  color: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+  text-decoration: inherit !important;
+  white-space: inherit !important;
+}
+
+[data-boldlead-fixation] {
+  display: inline !important;
+  font: inherit !important;
+  color: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+  text-decoration: inherit !important;
+  white-space: inherit !important;
+  font-weight: var(--boldlead-reader-weight, 700) !important;
+}

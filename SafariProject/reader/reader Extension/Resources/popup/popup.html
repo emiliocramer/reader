@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>reader</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main data-boldlead-root>
+      <header class="topbar">
+        <div>
+          <h1>reader</h1>
+          <p id="status">Enabled automatically</p>
+        </div>
+        <label class="switch" title="Enable bionic text on pages">
+          <input id="enabled" type="checkbox">
+          <span aria-hidden="true"></span>
+        </label>
+      </header>
+
+      <section class="controls" aria-label="Configuration">
+        <label class="field">
+          <span>Fixation</span>
+          <output id="fixationValue" for="fixationRatio">50%</output>
+          <input id="fixationRatio" type="range" min="20" max="80" step="5">
+        </label>
+
+        <div class="split">
+          <label class="field">
+            <span>Minimum</span>
+            <input id="minFixation" type="number" min="1" max="6" step="1">
+          </label>
+          <label class="field">
+            <span>Maximum</span>
+            <input id="maxFixation" type="number" min="1" max="16" step="1">
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Weight</span>
+          <output id="weightValue" for="fontWeight">700</output>
+          <input id="fontWeight" type="range" min="500" max="900" step="50">
+        </label>
+
+        <label class="row">
+          <input id="transformCode" type="checkbox">
+          <span>Code and preformatted text</span>
+        </label>
+
+        <label class="row">
+          <input id="transformEditable" type="checkbox">
+          <span>Editable page regions</span>
+        </label>
+
+        <label class="row">
+          <input id="pdfRedirectEnabled" type="checkbox">
+          <span>PDF native rewrite</span>
+        </label>
+      </section>
+
+      <button id="refreshPage" type="button">Reprocess Current Page</button>
+    </main>
+
+    <script src="../shared/browser-api.js"></script>
+    <script src="../shared/config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>reader Smoke Fixture</title>
+    <style>
+      body {
+        max-width: 760px;
+        margin: 40px auto;
+        font: 18px/1.5 system-ui, sans-serif;
+      }
+
+      code,
+      pre {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Every heading word should become bionic text.</h1>
+    <p>Every paragraph word, link word, button word, and code word should be transformed automatically.</p>
+    <p><a href="#">Every link word changes too.</a></p>
+    <button type="button">Every button word changes</button>
+    <pre>Every preformatted word changes.</pre>
+    <code>Every inline code word changes.</code>
+
+    <shadow-host></shadow-host>
+
+    <script>
+      customElements.define(
+        "shadow-host",
+        class extends HTMLElement {
+          connectedCallback() {
+            const root = this.attachShadow({ mode: "open" });
+            root.innerHTML = "<p>Every open shadow root word changes.</p>";
+          }
+        }
+      );
+
+      setTimeout(() => {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = "Every dynamically inserted word changes after load.";
+        document.body.appendChild(paragraph);
+      }, 600);
+    </script>
+  </body>
+</html>
